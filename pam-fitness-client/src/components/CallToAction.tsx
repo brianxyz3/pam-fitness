@@ -1,0 +1,32 @@
+import CTOCard from './CTOCard';
+import { BiTargetLock } from 'react-icons/bi'
+import { LuBicepsFlexed } from 'react-icons/lu';
+import { VscSettings } from 'react-icons/vsc';
+
+
+const CallToAction = () => {
+  return (
+    <section className='px-10 py-20'>
+        <div className='mt-8'>
+            <h2 className='text-4xl tracking-wide font-bold my-5'>Getting Started Is Simple</h2>
+            <p className='w-[33rem] text-gray-400 text-sm leading-5'>
+                Since 2019, we've been dedicated to providing a dynamic and supportive environment where individuals of all fitness levels can thrive.
+            </p>
+        </div>
+
+        <div className='flex flex-wrap justify-between gap-4 gap-y-10 my-16'>
+            <CTOCard style='cto_card_1' title='CHOOSE YOUR GOAL'>
+                <BiTargetLock className='text-red-600 size-[4rem]'/>
+            </CTOCard>
+            <CTOCard style='cto_card_2' title='GET YOUR CUSTOM PLAN'>
+                <VscSettings className='text-red-600 size-[4rem]'/>
+            </CTOCard>
+            <CTOCard style='cto_card_3' title='TRACK YOUR PROGRESS'>
+                <LuBicepsFlexed className='text-red-600 size-[4rem]'/>
+            </CTOCard>
+        </div>
+    </section>
+  )
+}
+
+export default CallToAction;
