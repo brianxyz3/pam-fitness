@@ -9,9 +9,9 @@ interface FeaturesCardProps {
 const FeaturesCard: React.FC<FeaturesCardProps> = ({style, title, desc}) => {
   return (
     <div className={`${style} img rounded-3xl flex flex-col justify-end`}>
-        <div className='p-2 lg:p-4 rounded-b-3xl rounded-t-2xl features_card_text'>
-            <h4 className="text-xl mb-1">{title}</h4>
-            <p className='text-xs lg:text-base text-gray-400'>{desc}</p>
+        <div className='p-2 xl:p-4 rounded-b-3xl rounded-t-2xl features_card_text'>
+            <h5 className="lg:text-lg mb-1">{title}</h5>
+            <p className='text-xs lg:text-sm text-gray-400'>{desc}</p>
         </div>
     </div>
 )

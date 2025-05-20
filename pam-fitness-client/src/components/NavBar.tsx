@@ -25,7 +25,7 @@ const NavBar = () => {
   ]
 
   return (
-    <nav className='w-full z-10 text-sm text-gray-300 py-5 px-10 fixed top-2 flex justify-between'>
+    <nav className='w-dvw z-10 text-sm text-gray-300 py-5 px-10 fixed top-2 flex justify-between'>
       {/* logo */}
       <div>Pam-Fitness</div>
       

@@ -4,11 +4,11 @@ import IconBtn from './IconBtn';
 
 const Hero = () => {
   return (
-    <section className="hero_section">
+    <section className="hero_section sm:px-10 bg-right">
       <div className='h-[90vh] flex items-center'>
-        <div className="w-[23rem] gym_hour tracking-widest leading-8 ms-8 p-8 rounded-3xl text-base flex flex-col gap-y-1">
+        <div className="w-fit text-sm lg:w-[23rem] gym_hour sm:tracking-wide lg:tracking-widest leading-8 p-4 sm:p-8 rounded-3xl sm:text-base hidden  sm:flex flex-col gap-y-1">
           <h5 className="text-lg font-bold">TIME</h5>
-          <div className='flex justify-between'>
+          <div className='flex justify-between gap-x-4'>
             <p>Mon to Sat</p>
             <p>6-11:30pm, 6-8:30pm</p>
           </div>
@@ -23,7 +23,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <h1 className="bg-[linear-gradient(#ffffff_35%,#808080_55%,#1b1a1a_100%)] bg-clip-text text-transparent text-6xl text-center font-bold">TRAIN HARD, LIVE WELL</h1>
+      <h1 className="bg-[linear-gradient(#ffffff_35%,#808080_55%,#1b1a1a_100%)] -translate-y-6 scale-y-150 bg-clip-text text-transparent text-2xl sm:text-5xl xl:text-6xl text-center font-bold">TRAIN HARD, LIVE WELL</h1>
     </section>
   )
 }
