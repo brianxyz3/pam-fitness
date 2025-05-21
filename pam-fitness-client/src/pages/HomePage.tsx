@@ -7,6 +7,7 @@ import About from '../components/About';
 import Banner from '../components/Banner';
 import JoinUs from '../components/JoinUs';
 import Footer from '../components/Footer';
+import Coaches from '../components/Coaches';
 
 const HomePage = () => {
   return (
@@ -18,6 +19,7 @@ const HomePage = () => {
       <Features/>
       <About/>
       <JoinUs/>
+      <Coaches/>
       <Footer/>
     </>
   )

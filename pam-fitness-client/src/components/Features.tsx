@@ -18,10 +18,10 @@ const Features = () => {
             <FeaturesCard style='img4' title='Personalized Workout Plans' desc='Workouts built around your fitness level, schedule, and goals -- no guesswork, just progress'/>
         </div>
 
-        <div className='w-fit mx-auto bg-red-600 flex items-center gap-2 text-nowrap text-sm p-1 rounded-3xl'>
+        <div className='w-fit mx-auto hover:scale-110 text-black font-semibold group duration-300 bg-red-600 flex items-center gap-2 text-nowrap text-sm p-1 rounded-3xl'>
           <p className='ps-3'>JOIN OUR TEAM</p>
           <IconBtn style='size-8 bg-black'>
-            <BsArrowRight className='-rotate-45 size-4 fill-red-600'/>
+            <BsArrowRight className='-rotate-45 group-hover:rotate-0 duration-300 size-4 fill-red-600'/>
           </IconBtn>
         </div>
     </section>

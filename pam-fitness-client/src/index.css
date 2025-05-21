@@ -61,35 +61,36 @@ body {
   gap: 1.5rem;
 }
 
-.img{
+.grid_img{
+  border-radius: 1.5rem;
   background-position: center;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.img1 {
+.features_grid .img1 {
   grid-area: img1;
   background-image: url("./assets/images/gym-cable-pull-workout.jpg");
 }
 
-.img2 {
+.features_grid .img2 {
   grid-area: img2;
   background-image: url("./assets/images/gym-community.jpg");
 }
 
-.img3 {
+.features_grid .img3 {
   grid-area: img3;
   background-image: url("./assets/images/gym-treadmill-workout.jpg");
 }
 
-.img4 {
+.features_grid .img4 {
   grid-area: img4;
   background-image: url("./assets/images/biceps-workout.jpg");
 }
 
-.img4 p {
+.features_grid .img4 p {
   width: 70%;
 }
 
@@ -135,6 +136,31 @@ body {
   transform: scaleY(1.2);
 }
 
+.staff_container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr 2fr 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.staff_container .profile_img1 {
+  background-image: url("./assets/images/squat-workout-resized.jpg");
+}
+
+.staff_container .profile_img2 {
+  background-image: url("./assets/images/personal-trainer2.jpg");
+}
+.staff_container .profile_img3 {
+  background-image: url("./assets/images/cardio-coach.jpg");
+}
+.staff_container .profile_img4 {
+  background-image: url("./assets/images/strength-coach.jpg");
+}
+.staff_container .profile_img5 {
+  background-image: url("./assets/images/nutritionist.jpg");
+}
+
 @keyframes slide {
   to {
     transform: translateX(calc(-50% - 0.5rem));
@@ -163,10 +189,27 @@ body {
       "img2"
       "img3"
       "img4";
-    gap: 1.5rem; 
+    gap: 1rem; 
   }
 
-  .img4 p {
+  .features_grid .img4 p {
     width: 100%;
+  }
+
+  .staff_container {
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 20rem);
+    grid-template-areas:
+      "profileImg1"
+      "profileImg2"
+      "profileImg3"
+      "profileImg4"
+      "profileImg5"
+      "title";
+  }
+
+  .grid_text {
+    grid-area: title;
   }
 }

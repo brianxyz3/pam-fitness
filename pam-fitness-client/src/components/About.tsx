@@ -16,7 +16,7 @@ const About = () => {
             <div className='sm:w-4/5 lg:w-1/2'>
                 <h3 className="text-xl xl:text-3xl font-bold scale-y-125 xl:scale-y-150 mb-4">EXPERIENCE FITNESS LIKE NEVER BEFORE- WHERE <span className="text-red-600">PASSION, POWER, AND COMMUNITY UNITE</span></h3>
                 <p className="text-gray-400 pt-5 pb-8 tracking-wide leading-8 text-lg">We're passionate about transforming lives through fitness. Since 2019, we've been dedicated to providing a dynamic and supportive environment where individuals of all fitness levels can thrive</p>
-                <a href="/" className="border border-gray-400 tracking-tight rounded-3xl px-4 py-2 font-bold">LEARN MORE ABOUT US</a>
+                <a href="/" className="border border-gray-400 hover:border-red-600 hover:text-red-600 hover:scale-105 block w-fit duration-300 tracking-tight rounded-3xl px-4 py-2 font-bold">LEARN MORE ABOUT US</a>
             </div>
         </div>
         <div className='flex justify-between flex-wrap gap-y-5 mt-14'>

@@ -12,16 +12,16 @@ const CTOCard: React.FC<CTOCardProps> = ({ style, title, children}) => {
   return (
     <div className={`${style} overflow-hidden hover:overflow-visible relative group hover:-translate-y-8 cto_card rounded-3xl h-96 w-full md:min-w-[22rem] 2xl:max-w-[40rem] max-w-[24rem] p-5 flex flex-col justify-between delay-100 duration-200`}>
         {children}
-        <div className='w-5/6'>
+        <div className='w-11/12 md:w-5/6'>
             <h5 className="text-xl tracking-tighter font-bold mb-6">
                 {title}
             </h5>
             <p className='leading-6 text-gray-400 text-sm'>Whether it's fat loss, muscle gain, or building endurance -- start by picking a plan that fits your lifestyle. Progress tracking, real-time stats, and expert check-ins.</p>
         </div>
-        <IconBtn style='size-8 sm:size-12 border-2 border-red-600 ms-auto'>
-            <BsArrowRight className='text-red-600 size-4 sm:size-5'/>
+        <IconBtn style='size-8 sm:size-12 group-hover:bg-red-600 border-2 border-red-600 ms-auto duration-300'>
+            <BsArrowRight className='fill-red-600 group-hover:fill-black size-4 sm:size-5 duration-300'/>
         </IconBtn>
-        <a href='/' className="bg-red-600 border-4 border-black text-black w-fit px-5 py-2 rounded-3xl font-bold opacity-0 group-hover:-bottom-6 group-hover:opacity-100 absolute -bottom-10 right-1/2 translate-x-1/2 duration-500">
+        <a href='/' className="bg-red-600 text-nowrap text-sm md:text-base border-4 border-black text-black w-fit px-3 py-1 md:px-5 md:py-2 rounded-3xl font-bold opacity-0 group-hover:-bottom-6 group-hover:opacity-100 absolute -bottom-10 right-1/2 translate-x-1/2 duration-500">
             BOOKIING NOW
         </a>
     </div>
