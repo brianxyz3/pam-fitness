@@ -1,25 +1,29 @@
-import React from 'react';
-// import { Link } from 'react-router';
+import React from 'react'
+import { Link } from 'react-router';
 
-interface AccordionProps{
+interface AccordionProps {
     title: string;
-    items: string[];
-    // link: string[];
+    details?: string[];
 }
 
-const Accordion: React.FC<AccordionProps> = ({title, items}) => {
+const Accordion: React.FC<AccordionProps> = ({title, details}) => {
   return (
-    <div className='relative group'>
-        <a href='/'>{title}</a>
-        <div className='absolute translate-x-2 hidden group-hover:flex flex-col text-xs pt-1'>
-            {
-                items.map((item: string, idx: number) => (
-                    <a key={idx} href="/" className='bg-black text-nowrap hover:bg-blue-700 py-2 px-1'>{item}</a>
-                ))
-            }
-        </div>
+    <div className='text-xl scale-y-110 border-b border-white/20 mb-2 p-1 hover:cursor-pointer'>
+        {details ? 
+        <details className='px-5'>
+            <summary className='hover:text-white'>{title}</summary>  
+            <div className='text-base'>
+                {
+                    details.map((detail, idx) => (
+                        <Link to={"/"} key={idx} className='block w-fit border-b-2 border-transparent hover:text-white hover:scale-105 hover:-translate-y-1.5 hover:border-red-900 mb-1 ms-6 duration-300'>{detail}</Link>
+                    ))
+                }
+            </div>
+        </details>
+        :<Link to={"/"} className='px-5 hover:text-white block'>{title}</Link>
+        }
     </div>
   )
 }
 
-export default Accordion;
+export default Accordion

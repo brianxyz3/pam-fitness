@@ -1,4 +1,3 @@
-import React from 'react';
 import NavBar from '../components/NavBar';
 import Hero from '../components/Hero';
 import CallToAction from '../components/CallToAction';
@@ -8,6 +7,7 @@ import Banner from '../components/Banner';
 import JoinUs from '../components/JoinUs';
 import Footer from '../components/Footer';
 import Coaches from '../components/Coaches';
+import '../stylesheets/homePage.css'
 
 const HomePage = () => {
   return (

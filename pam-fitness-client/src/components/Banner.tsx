@@ -1,4 +1,3 @@
-import React from 'react'
 import { HiSparkles } from 'react-icons/hi';
 
 const Banner = () => {

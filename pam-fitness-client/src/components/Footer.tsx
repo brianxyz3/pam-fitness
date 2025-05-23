@@ -1,14 +1,14 @@
-import React from 'react'
 import { BsArrowRight, BsInstagram, BsTwitter } from 'react-icons/bs'
 import { FaFacebook, FaLocationDot } from 'react-icons/fa6'
 import IconBtn from './IconBtn'
 import FooterIconBtn from './FooterIconBtn'
+import Logo from './Logo'
 
 const Footer = () => {
   return (
     <footer className='bg-red-600 px-6 sm:px-10 mx-10 text-black rounded-t-3xl'>
         <div className='h-[20vh] group hover:scale-x-110 duration-300 sm:h-[30vh] w-fit mx-auto relative flex flex-col justify-center'>
-            <h5 className='text-xl md:text-5xl font-[600] text-center scale-150 md:tracking-wider'>LETS TALK</h5>
+            <h5 className='text-xl md:text-5xl font-[600] text-center scale-150 md:tracking-wider'>LET'S TALK</h5>
             <div className='bg-black absolute hover:scale-105 -right-[40%] w-fit p-1 md:p-2 rounded-full'>
                 <BsArrowRight className='-rotate-45 group-hover:rotate-0 size-2 md:size-4 fill-white duration-300'/>
             </div>
@@ -30,8 +30,8 @@ const Footer = () => {
                 <IconBtn style='size-10 bg-red-600'><FaLocationDot className='size-5'/></IconBtn>
             </div>
         </div>
-        <div className='border-t-2 py-2 h-fit border-black flex justify-between items-center flex-wrap gap-y-2'>
-            <p>PAM-FITNESS</p>
+        <div className='font-semibold border-t-2 py-2 h-fit border-black flex justify-between items-center flex-wrap gap-y-2'>
+            <Logo/>
             <ul className='flex flex-wrap gap-x-6 justify-between gap-y-2'>
                 <li className='hover:text-white duration-300'>About Us</li>
                 <li className='hover:text-white duration-300'>Services</li>

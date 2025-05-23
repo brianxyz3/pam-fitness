@@ -1,4 +1,3 @@
-import React from 'react'
 import { BiDumbbell, BiTargetLock } from 'react-icons/bi';
 import AboutCard from './AboutCard';
 import { PiEyeFill } from 'react-icons/pi';
@@ -11,7 +10,7 @@ const About = () => {
         <h2 className='text-2xl lg:text-4xl scale-y-150 my-5 font-bold'>DISCOVER THE <br />DIFFERENCE</h2>
         <div className='flex justify-between gap-5 xl:gap-0  items-center flex-wrap lg:flex-nowrap mb-6'>
             <div className='about_img relative'>
-                <img src={communityImg} alt='' className='w-full sm:h-96  h-fit'/>
+                <img src={communityImg} alt='3 female members having a chat after a workout session' width='600px' height='400px' className='w-full sm:h-96  h-fit'/>
             </div>
             <div className='sm:w-4/5 lg:w-1/2'>
                 <h3 className="text-xl xl:text-3xl font-bold scale-y-125 xl:scale-y-150 mb-4">EXPERIENCE FITNESS LIKE NEVER BEFORE- WHERE <span className="text-red-600">PASSION, POWER, AND COMMUNITY UNITE</span></h3>
