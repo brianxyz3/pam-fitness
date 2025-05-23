@@ -1,17 +1,23 @@
 import React from 'react'
+import { Link } from 'react-router';
 
 interface AboutCardProps {
+    style?: string;
     title: string;
     desc: string;
+    link?: string;
     children: any;
 }
 
-const AboutCard: React.FC<AboutCardProps> = ({title, desc, children}) => {
+const AboutCard: React.FC<AboutCardProps> = ({style, title, desc, link, children}) => {
   return (
-    <div className='bg-zinc-900/80 md:w-[30%] p-6 rounded-2xl'>
-        {children}
-        <h5 className="text-xl scale-y-125 tracking-tight font-bold my-3">{title}</h5>
-        <p className="text-gray-400 leading-7 tracking-wide text-lg">{desc}</p>
+    <div className={`${style} bg-custom-darker p-6 rounded-xl hover:scale-105 flex flex-col justify-between duration-300`}>
+        <div>
+            {children}
+            <h5 className="text-xl scale-y-125 tracking-tight font-bold my-3">{title}</h5>
+            <p className="text-gray-400 leading-relaxed text-lg">{desc}</p>
+        </div>
+        {link && <Link to='/' className="mt-4 w-fit font-semibold text-custom-orange hover:underline" >{link}</Link>}
     </div>
 )
 }

@@ -20,6 +20,7 @@ const About = () => {
         </div>
         <div className='flex justify-between flex-wrap gap-y-5 mt-14'>
             <AboutCard 
+                style='md:w-[30%]'
                 title='OUR MISSION'
                 desc='Our mission is clear: empower to reach their fitness goals, unlock their potential, and lead happier lives.'
                 >
@@ -27,6 +28,7 @@ const About = () => {
             </AboutCard>
             
             <AboutCard
+                style='md:w-[30%]'
                 title='OUR VALUES'
                 desc='Driven by upassion, fueled by results. Unleash your strength, embrace your potential. Together, we lift each other higher.'
                 >
@@ -34,6 +36,7 @@ const About = () => {
             </AboutCard>
             
             <AboutCard
+                style='md:w-[30%]'
                 title='OUR HISTORY'
                 desc="We've helped countless individuals transform their lives through fitness, and our commitment to empowering others remains as strong as ever."
                 >                    

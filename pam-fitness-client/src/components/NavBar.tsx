@@ -12,21 +12,21 @@ const NavBar = () => {
     {
       title: "Services",
       items: ["Personalized workout Plans", "Nutritional guidance", "Progress tracking", "Motivational community"],
-      links: [],
+      links: "/services",
     },
     {
       title: "About",
       items: ["Our mission", "Our values", "Our history"],
-      links: [],
+      links: "/about",
     },
     {
       title: "Coaches",
       items: ["Certified personal trainer", "strength conditioning coach", "Nutrition expert", "Cardio specialist", "Yoga & mindfulness coach"],
-      links: [],
+      links: "/",
     },
     {
       title: "Contact",
-      links: [],
+      links: "/",
     },
   ];
 
@@ -37,15 +37,15 @@ const NavBar = () => {
   }
 
   return (
-    <header className='w-dvw z-10 text-gray-300 py-5 px-10 fixed top-0'>
+    <header className='w-dvw z-10 text-gray-300 py-5 px-10 fixed top-0 left-0 right-0 bg-[#1a1a1acc] backdrop-blur-md'>
       {/* logo */}
-      <section className='w-dvh flex text-red-700 justify-between items-center'>
+      <section className='w-dvh flex text-custom-orange justify-between items-center'>
       <Logo/>
         
         {/* nav items/ site links */}
-        <nav className='hidden max-w-[40rem] sm:flex w-3/5 justify-evenly'>
+        <nav className='hidden max-w-[40rem] text-white sm:flex w-3/5 justify-evenly'>
           {navLinks.map((navItem, idx) => (
-            <NavPopUp key={idx} title={navItem.title} items={navItem.items} />
+            <NavPopUp key={idx} title={navItem.title} items={navItem.items} link={navItem.links} />
           ))} 
         </nav>
 
@@ -64,7 +64,7 @@ const NavBar = () => {
           </div>
         </div>
       </section>
-      <section className={`${isMenuOpen ? "translate-y-0" : "-translate-y-full"}  pt-5 pb-14 text-red-800 bg-black/95 flex flex-col justify-between items-center w-dvw h-dvh overflow-auto fixed inset-0 sm:hidden duration-500`}>
+      <section className={`${isMenuOpen ? "translate-y-0" : "-translate-y-full"}  pt-5 pb-14 text-[#FF4A04] bg-black/95 flex flex-col justify-between items-center w-dvw h-dvh overflow-auto fixed inset-0 sm:hidden duration-500`}>
         <div className="w-dvw flex justify-between bg-black px-10">
           <Logo/>
           <div className='hover:scale-110 duration-200' onClick={handleMenuToggle}>
