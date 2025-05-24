@@ -16,13 +16,13 @@ const CallToAction = () => {
 
         <div className='flex flex-wrap justify-evenly xl:justify-between gap-4 gap-y-10 my-16'>
             <CTOCard style='cto_card_1' title='CHOOSE YOUR GOAL'>
-                <BiTargetLock className='text-red-600 size-[4rem]'/>
+                <BiTargetLock className='text-[#FF4A04] size-[4rem]'/>
             </CTOCard>
             <CTOCard style='cto_card_2' title='GET YOUR CUSTOM PLAN'>
-                <VscSettings className='text-red-600 size-[4rem]'/>
+                <VscSettings className='text-[#FF4A04] size-[4rem]'/>
             </CTOCard>
             <CTOCard style='cto_card_3' title='TRACK YOUR PROGRESS'>
-                <LuBicepsFlexed className='text-red-600 size-[4rem]'/>
+                <LuBicepsFlexed className='text-[#FF4A04] size-[4rem]'/>
             </CTOCard>
         </div>
     </section>

@@ -18,7 +18,7 @@ const Hero = () => {
           <hr className='my-3'/>
           <div className='flex justify-between items-center bg-gradient-to-r from-black/50 via-zinc-900 to-zinc-600 p-1 rounded-3xl'>
             <p className='font-bold ms-3'>OUR LOCATION</p>
-            <IconBtn style='size-10 bg-red-600'><FaLocationDot className='size-5'/></IconBtn>
+            <IconBtn style='size-10 bg-[#FF4A04]'><FaLocationDot className='size-5'/></IconBtn>
           </div>
         </div>
       </div>

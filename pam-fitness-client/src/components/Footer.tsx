@@ -6,7 +6,7 @@ import Logo from './Logo'
 
 const Footer = () => {
   return (
-    <footer className='bg-red-600 px-6 sm:px-10 mx-10 text-black rounded-t-3xl'>
+    <footer className='bg-gradient-to-r from-[#FF4A04] to-[#FF4A04] via-red-800 px-6 sm:px-10 mx-10 text-black rounded-t-3xl'>
         <div className='h-[20vh] group hover:scale-x-110 duration-300 sm:h-[30vh] w-fit mx-auto relative flex flex-col justify-center'>
             <h5 className='text-xl md:text-5xl font-[600] text-center scale-150 md:tracking-wider'>LET'S TALK</h5>
             <div className='bg-black absolute hover:scale-105 -right-[40%] w-fit p-1 md:p-2 rounded-full'>

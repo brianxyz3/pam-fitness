@@ -51,19 +51,21 @@ const NavBar = () => {
 
         <div>
           {/* Call to action */}
-          <Link to={'/'} className='hidden group hover:scale-110 hover:bg-red-700 hover:text-black hover:border-black duration-300 sm:flex items-center gap-1.5 border border-gray-400 text-xs p-1 rounded-3xl'>
+          <Link to={'/'} className='hidden group hover:scale-110 hover:bg-[#FF4A04] hover:text-black hover:border-black duration-300 sm:flex items-center gap-1.5 border border-gray-400 text-xs p-1 rounded-3xl'>
             <p className='ms-2'>JOIN OUR TEAM</p>
-            <IconBtn style='size-6 bg-red-600 group-hover:bg-black duration-300'>
+            <IconBtn style='size-6 bg-[#FF4A04] group-hover:bg-black duration-300'>
               <BsArrowRight className='-rotate-45 text-white group-hover:text-red-700 group-hover:rotate-0 duration-300 size-3'/>
             </IconBtn>
           </Link>
 
           {/* mobile screen nav icon */}
-          <div className='sm:hidden text-red-600 hover:scale-110 duration-200' onClick={handleMenuToggle}>
+          <div className='sm:hidden text-[#FF4A04] hover:scale-110 duration-200' onClick={handleMenuToggle}>
             <CiMenuBurger className='size-6'/>
           </div>
         </div>
       </section>
+
+      {/* mobile screen nav link */}
       <section className={`${isMenuOpen ? "translate-y-0" : "-translate-y-full"}  pt-5 pb-14 text-[#FF4A04] bg-black/95 flex flex-col justify-between items-center w-dvw h-dvh overflow-auto fixed inset-0 sm:hidden duration-500`}>
         <div className="w-dvw flex justify-between bg-black px-10">
           <Logo/>
@@ -74,11 +76,11 @@ const NavBar = () => {
         <nav className='h-[calc(100dvh-120px)] w-dvw mt-12 flex flex-col gap-7'>
           {
             navLinks.map((navItem, idx) => (
-              <Accordion key={idx} title={navItem.title} details={navItem.items}/>
+              <Accordion key={idx} title={navItem.title} details={navItem.items} link={navItem.links}/>
             ))
           }      
         </nav>
-        <Link to={"/"} className='px-5 text-xl w-fit mx-auto hover:bg-red-600 rounded-3xl py-1 border-2 hover:text-white hover:border-transparent bg-black border-red-600 duration-300'>Join Our Team</Link>
+        <Link to={"/"} className='px-5 text-xl w-fit mx-auto hover:bg-red-600 rounded-3xl py-1 border-2 hover:text-white hover:border-transparent bg-black border-[#FF4A04] duration-300'>Join Our Team</Link>
       </section>
     </header>
   )

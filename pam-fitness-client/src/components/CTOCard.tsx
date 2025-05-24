@@ -22,7 +22,7 @@ const CTOCard: React.FC<CTOCardProps> = ({ style, title, children}) => {
         <IconBtn style='size-8 sm:size-12 group-hover:bg-red-600 border-2 border-red-600 ms-auto duration-300'>
             <BsArrowRight className='fill-red-600 group-hover:fill-black size-4 sm:size-5 duration-300'/>
         </IconBtn>
-        <p className="bg-red-600 text-nowrap text-sm md:text-base border-4 border-black text-black w-fit px-3 py-1 md:px-5 md:py-2 rounded-3xl font-bold opacity-0 group-hover:-bottom-6 group-hover:opacity-100 absolute -bottom-10 right-1/2 translate-x-1/2 duration-500">
+        <p className="bg-[#FF4A04] text-nowrap text-sm md:text-base border-4 border-black text-black w-fit px-3 py-1 md:px-5 md:py-2 rounded-3xl font-bold opacity-0 group-hover:-bottom-6 group-hover:opacity-100 absolute -bottom-10 right-1/2 translate-x-1/2 duration-500">
             BOOKIING NOW
         </p>
     </Link>

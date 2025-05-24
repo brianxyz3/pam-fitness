@@ -18,7 +18,7 @@ const Features = () => {
             <FeaturesCard style='img4' title='Personalized Workout Plans' desc='Workouts built around your fitness level, schedule, and goals -- no guesswork, just progress'/>
         </div>
 
-        <Link to={'/'} className='w-fit mx-auto hover:scale-110 text-black font-semibold group duration-300 bg-red-600 flex items-center gap-2 text-nowrap text-sm p-1 rounded-3xl'>
+        <Link to={'/services'} className='w-fit mx-auto hover:scale-110 text-black font-semibold group duration-300 hover:bg-red-600 bg-custom-orange flex items-center gap-2 text-nowrap text-sm p-1 rounded-3xl'>
           <p className='ps-3'>JOIN OUR TEAM</p>
           <IconBtn style='size-8 bg-black'>
             <BsArrowRight className='-rotate-45 group-hover:rotate-0 duration-300 size-4 fill-red-600'/>

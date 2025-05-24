@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 img {
   display: block;
 }
@@ -15,6 +19,7 @@ img {
 
 body {
   width: 100dvw;
+  height: 100dvh;
   font-family: 'Inter', sans-serif;
   overflow-x: hidden;
   background-color: #0D0D0D;
@@ -22,14 +27,11 @@ body {
 }
 
 nav {
-  background-color: rgba(0, 0, 0, 0.5);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
   font-weight: 600;
 }
 
 .bg-custom-dark {
-  background-color: #1A1A1A;
+  background-color: #1a1a1a;
 }
 
 .bg-custom-darker {
