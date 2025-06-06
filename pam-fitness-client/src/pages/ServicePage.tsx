@@ -1,12 +1,11 @@
 import { MdBusinessCenter, MdFitnessCenter, MdGroups, MdMilitaryTech, MdRestaurantMenu, MdSpa } from 'react-icons/md';
-import { Link } from 'react-router';
 import AboutCard from '../components/AboutCard';
 import ClientReviewCard from '../components/ClientReviewCard';
-import Logo from '../components/Logo';
+import { Link } from 'react-router';
 
 const ServicePage = () => {
   return (
-<>
+<main>
 <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-custom-darker">
     <div className="w-dvw mx-auto px-4 md:px-8 lg:px-16 text-center">
         <h1 className="text-4xl md:text-6xl font-extrabold mb-6">
@@ -61,25 +60,12 @@ const ServicePage = () => {
     <div className="w-dvw px-4 md:px-8 lg:px-16 text-center">
         <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-4">Ready to Experience the Difference?</h2>
         <p className="text-lg text-white mb-8 max-w-2xl mx-auto">Explore our services and find the perfect fit for your fitness journey. Let's achieve your goals together!</p>
-        <button className="bg-white text-custom-orange px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-colors">
+        <Link to={'/subscriptions'} className="bg-white text-custom-orange px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-colors">
             VIEW MEMBERSHIP OPTIONS
-        </button>
+        </Link>
     </div>
 </section>
-<footer className="bg-custom-darker py-12">
-    <div className="w-dvw px-4 md:px-8 lg:px-16 text-center text-gray-400">
-        <div className="text-2xl font-bold text-custom-orange mb-4 w-fit mx-auto"><Logo/></div>
-        <p className="mb-2">123 Fitness Street, Workout City, WC 12345</p>
-        <p className="mb-4">© 2024 Pam-Fitness. All Rights Reserved.</p>
-        <div className="flex justify-center space-x-4">
-            <Link className="hover:text-custom-orange transition-colors" to="#">Facebook</Link>
-            <Link className="hover:text-custom-orange transition-colors" to="#">Instagram</Link>
-            <Link className="hover:text-custom-orange transition-colors" to="#">Twitter</Link>
-        </div>
-    </div>
-</footer>
-
-</>
+</main>
   )
 }
 

@@ -54,3 +54,26 @@ nav {
   color: #FF4A04;
   font-weight: 600;
 }
+
+.subs_container:hover .subs_card:not(:hover) {
+  filter: blur(3px);
+  box-shadow: none;
+}
+
+form label .subs_form_input, 
+form label .subs_form_select,
+form .subs_form_btn {
+  box-shadow: 5px 5px 10px #122118,
+              -5px -5px 10px #1b3224;
+}
+
+form label .subs_form_input:focus,
+form label .subs_form_select:focus {
+  box-shadow: inset 5px 5px 10px #122118,
+              inset -5px -5px 10px #1b3224;
+}
+
+form .subs_form_btn:active {
+  box-shadow: inset 5px 5px 10px #3a1507e9,
+              inset -5px -5px 10px #8d5038;
+}

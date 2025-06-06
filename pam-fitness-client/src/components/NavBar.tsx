@@ -51,8 +51,8 @@ const NavBar = () => {
 
         <div>
           {/* Call to action */}
-          <Link to={'/'} className='hidden group hover:scale-110 hover:bg-[#FF4A04] hover:text-black hover:border-black duration-300 sm:flex items-center gap-1.5 border border-gray-400 text-xs p-1 rounded-3xl'>
-            <p className='ms-2'>JOIN OUR TEAM</p>
+          <Link to={'/subscriptions'} className='hidden group hover:scale-110 hover:bg-[#FF4A04] hover:text-black hover:border-black duration-300 sm:flex items-center gap-1.5 border border-gray-400 text-xs p-1 rounded-3xl'>
+            <p className='ms-2 truncate'>JOIN US</p>
             <IconBtn style='size-6 bg-[#FF4A04] group-hover:bg-black duration-300'>
               <BsArrowRight className='-rotate-45 text-white group-hover:text-red-700 group-hover:rotate-0 duration-300 size-3'/>
             </IconBtn>
@@ -78,9 +78,10 @@ const NavBar = () => {
             navLinks.map((navItem, idx) => (
               <Accordion key={idx} title={navItem.title} details={navItem.items} link={navItem.links}/>
             ))
-          }      
+          }  
+
+          <Link to={"/subscriptions"} className='truncate px-5 text-xl w-fit mx-auto hover:bg-red-600 rounded-3xl py-1 border-2 hover:text-white hover:border-transparent bg-black border-[#FF4A04] duration-300'>Join Us</Link>    
         </nav>
-        <Link to={"/"} className='px-5 text-xl w-fit mx-auto hover:bg-red-600 rounded-3xl py-1 border-2 hover:text-white hover:border-transparent bg-black border-[#FF4A04] duration-300'>Join Our Team</Link>
       </section>
     </header>
   )

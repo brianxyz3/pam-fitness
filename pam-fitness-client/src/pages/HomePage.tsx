@@ -20,7 +20,7 @@ const HomePage = () => {
       <About/>
       <JoinUs/>
       <Coaches/>
-      <Footer/>
+      <Footer isHomePage={true}/>
     </>
   )
 }
