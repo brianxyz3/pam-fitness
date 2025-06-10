@@ -6,6 +6,7 @@ import MainLayout from './layouts/MainLayout';
 import AboutPage from './pages/AboutPage';
 import SubscriptionsPage from './pages/SubscriptionsPage';
 import CoachesPage from './pages/CoachesPage';
+import ContactUsPage from './pages/ContactUsPage';
 // import Test from './pages/Test';
 
 const App = () => {
@@ -19,7 +20,7 @@ const App = () => {
           <Route path='/about' element={<AboutPage/>} />
           <Route path='/subscriptions' element={<SubscriptionsPage/>} />
           <Route path='/coaches' element={<CoachesPage/>} />
-          {/* <Route path='/test' element={<Test/>} /> */}
+          <Route path='/contact' element={<ContactUsPage/>} />
         </Route>
       </Routes>
     </BrowserRouter>

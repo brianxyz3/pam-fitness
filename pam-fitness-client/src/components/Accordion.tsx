@@ -5,9 +5,10 @@ interface AccordionProps {
     title: string;
     link: string;
     details?: string[];
+    closeMenu: () => void;
 }
 
-const Accordion: React.FC<AccordionProps> = ({title, details, link}) => {
+const Accordion: React.FC<AccordionProps> = ({title, details, link, closeMenu}) => {
   return (
     <div className='text-xl scale-y-110 border-b border-white/20 mb-2 p-1 hover:cursor-pointer'>
         {details ? 
@@ -16,12 +17,12 @@ const Accordion: React.FC<AccordionProps> = ({title, details, link}) => {
             <div className='text-base'>
                 {
                     details.map((detail, idx) => (
-                        <Link to={link} key={idx} className='block w-fit border-b-2 border-transparent hover:text-white hover:scale-105 hover:-translate-y-1.5 hover:border-red-900 mb-1 ms-6 duration-300'>{detail}</Link>
+                        <Link onClick={closeMenu} to={link} key={idx} className='block w-fit border-b-2 border-transparent hover:text-white hover:scale-105 hover:-translate-y-1.5 hover:border-red-900 mb-1 ms-6 duration-300'>{detail}</Link>
                     ))
                 }
             </div>
         </details>
-        :<Link to={"/"} className='px-5 hover:text-white block'>{title}</Link>
+        :<Link onClick={closeMenu} to={"/"} className='px-5 hover:text-white block'>{title}</Link>
         }
     </div>
   )

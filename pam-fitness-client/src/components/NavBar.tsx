@@ -66,22 +66,24 @@ const NavBar = () => {
       </section>
 
       {/* mobile screen nav link */}
-      <section className={`${isMenuOpen ? "translate-y-0" : "-translate-y-full"}  pt-5 pb-14 text-[#FF4A04] bg-black/95 flex flex-col justify-between items-center w-dvw h-dvh overflow-auto fixed inset-0 sm:hidden duration-500`}>
+      <section className={`${isMenuOpen ? "translate-y-0" : "-translate-y-full"}  pt-5 pb-14 text-[#FF4A04] bg-black/95 flex flex-col items-center w-dvw h-dvh overflow-auto fixed inset-0 sm:hidden duration-500`}>
         <div className="w-dvw flex justify-between bg-black px-10">
-          <Logo/>
+          <div className='size-fit' onClick={() => (setIsMenuOpen(false))}>
+            <Logo/>
+          </div>
           <div className='hover:scale-110 duration-200' onClick={handleMenuToggle}>
             <CiMenuFries className='size-6'/>
           </div>
         </div>
-        <nav className='h-[calc(100dvh-120px)] w-dvw mt-12 flex flex-col gap-7'>
+        <nav className='w-dvw mt-16 flex flex-col gap-7'>
           {
             navLinks.map((navItem, idx) => (
-              <Accordion key={idx} title={navItem.title} details={navItem.items} link={navItem.links}/>
+              <Accordion closeMenu={handleMenuToggle} key={idx} title={navItem.title} details={navItem.items} link={navItem.links}/>
             ))
           }  
-
-          <Link to={"/subscriptions"} className='truncate px-5 text-xl w-fit mx-auto hover:bg-red-600 rounded-3xl py-1 border-2 hover:text-white hover:border-transparent bg-black border-[#FF4A04] duration-300'>Join Us</Link>    
+          <Link onClick={handleMenuToggle} to={"/subscriptions"} className='mt-16 truncate px-5 text-xl w-fit mx-auto hover:bg-red-600 rounded-3xl py-1 border-2 hover:text-white hover:border-transparent bg-black border-[#FF4A04] duration-300'>Join Us</Link>
         </nav>
+        
       </section>
     </header>
   )

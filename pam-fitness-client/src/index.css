@@ -70,7 +70,7 @@ form .subs_form_btn {
 form label .subs_form_input:focus,
 form label .subs_form_select:focus {
   box-shadow: inset 5px 5px 10px #122118,
-              inset -5px -5px 10px #1b3224;
+              inset -5px -5px 10px #1c3a28;
 }
 
 form .subs_form_btn:active {

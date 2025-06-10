@@ -11,7 +11,7 @@ interface SubscriptionCardProps {
 const SubscriptionCard: React.FC<SubscriptionCardProps> = ({subDuration, price, perks, isMostPopular = false}) => {
   return (
     <div className={`${isMostPopular ? 'relative border-2 border-[#38e07b] shadow-2xl shadow-[#38e07b]/40' : 'border-[#264532]'} subs_card group flex flex-col gap-6 rounded-2xl border border-solid bg-[#182f20] p-8 hover:border-[#38e07b] transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-[#38e07b]/30`}>
-        {isMostPopular && <div className="absolute -top-0.5 -right-0.5 bg-[#38e07b] text-[#122118] px-4 py-1.5 text-xs font-bold shadow-md shadow-gray-950 rounded-bl-lg rounded-tr-xl">MOST POPULAR</div>}
+        {isMostPopular && <div className="absolute -top-0.5 -right-0.5 bg-[#38e07b] text-[#122118] px-4 py-1.5 text-xs font-bold shadow-sm shadow-white/50 rounded-bl-lg rounded-tr-xl">MOST POPULAR</div>}
         <div className="flex flex-col gap-2">
             <h2 className="text-2xl font-bold leading-tight">{subDuration}</h2>
             <p className="flex items-baseline gap-1.5 text-white">
