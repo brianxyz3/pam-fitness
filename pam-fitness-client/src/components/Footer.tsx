@@ -41,10 +41,10 @@ const Footer: React.FC<FooterProp> = ({isHomePage = false}) => {
                 <div className='font-semibold border-t-2 py-2 h-fit border-black flex justify-between items-center flex-wrap gap-y-2'>
                     <Logo/>
                     <ul className='flex flex-wrap gap-x-6 justify-between gap-y-2'>
-                        <li className='hover:text-white duration-300'>About Us</li>
-                        <li className='hover:text-white duration-300'>Services</li>
-                        <li className='hover:text-white duration-300'>Projects</li>
-                        <li className='hover:text-white duration-300'>Reviews</li>
+                        <Link to="/about" className='hover:text-white duration-300'>About Us</Link>
+                        <Link to="/service" className='hover:text-white duration-300'>Services</Link>
+                        <Link to="/" className='hover:text-white duration-300'>Projects</Link>
+                        <Link to="/" className='hover:text-white duration-300'>Reviews</Link>
                     </ul>
                     <div className='w-fit flex gap-4'>
                         <FooterIconBtn link='/'>
@@ -65,9 +65,9 @@ const Footer: React.FC<FooterProp> = ({isHomePage = false}) => {
                 <p className="mb-2">123 Fitness Street, Workout City, WC 12345</p>
                 <p className="mb-4">© 2024 Pam-Fitness. All Rights Reserved.</p>
                 <div className="flex justify-center space-x-4">
-                    <Link className="hover:text-custom-orange transition-colors" to="#">Facebook</Link>
-                    <Link className="hover:text-custom-orange transition-colors" to="#">Instagram</Link>
-                    <Link className="hover:text-custom-orange transition-colors" to="#">Twitter</Link>
+                    <Link className="hover:text-custom-orange transition-colors" to="/">Facebook</Link>
+                    <Link className="hover:text-custom-orange transition-colors" to="/">Instagram</Link>
+                    <Link className="hover:text-custom-orange transition-colors" to="/">Twitter</Link>
                 </div>
             </div>
         </footer>

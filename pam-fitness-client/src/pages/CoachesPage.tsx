@@ -1,6 +1,5 @@
-import React from 'react'
 import CoachesProfileCard from '../components/CoachesProfileCard';
-import { MdArrowForward } from 'react-icons/md';
+import GetStarted from '../components/GetStarted';
 
 const CoachesPage = () => {
 
@@ -56,9 +55,11 @@ const CoachesPage = () => {
     ]
 
   return (
-    <main className="container my-20 mx-auto px-6 py-12">
-        <section className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4 text-white">Meet Our Team</h2>
+    <main className="container mx-auto px-6 py-14">
+        <section className="text-center mb-16 mt-4">
+            <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white">
+                MEET <span className="text-custom-orange">OUR TEAM</span>
+            </h1>
             <p className="text-lg text-gray-400 max-w-2xl mx-auto">
                 Our dedicated team of certified professionals is here to guide and motivate you on your fitness journey. Get to know the experts who make our gym a leading fitness destination.
             </p>
@@ -69,16 +70,24 @@ const CoachesPage = () => {
             ))}
         </section>
         <section className="mt-20 py-16 bg-gray-800 rounded-lg shadow-xl text-center">
-            <h2 className="text-3xl font-bold mb-4 text-white">Ready to Start Your Journey?</h2>
-            <p className="md:text-lg text-gray-400 mb-8 max-w-xl mx-auto">
-                Our expert team is excited to help you achieve your fitness aspirations. Join us today and transform your life!
-            </p>
-            <button type='reset' className="bg-custom-orange text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-red-700 transition duration-300 flex items-center mx-auto">
-                Get Started Now <MdArrowForward/>
-            </button>
+            <GetStarted 
+                title="Ready to Start Your Journey?"
+                description="Our expert team is excited to help you achieve your fitness aspirations. Join us today and transform your life!"
+                btnText="Get Started Now"
+            />
         </section>
+        
     </main>
   )
 }
 
 export default CoachesPage;
+
+
+{/* <h2 className="text-3xl font-bold mb-4 text-white"></h2>
+            <p className="md:text-lg text-gray-400 mb-8 max-w-xl mx-auto">
+                
+            </p>
+            <button type='reset' className="bg-custom-orange text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-red-700 transition duration-300 flex items-center mx-auto">
+                 
+            </button> */}

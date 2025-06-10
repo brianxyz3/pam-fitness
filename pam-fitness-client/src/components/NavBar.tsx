@@ -22,11 +22,11 @@ const NavBar = () => {
     {
       title: "Coaches",
       items: ["Certified personal trainer", "strength conditioning coach", "Nutrition expert", "Cardio specialist", "Yoga & mindfulness coach"],
-      links: "/",
+      links: "/coaches",
     },
     {
       title: "Contact",
-      links: "/",
+      links: "/contact",
     },
   ];
 

@@ -22,7 +22,7 @@ const Accordion: React.FC<AccordionProps> = ({title, details, link, closeMenu}) 
                 }
             </div>
         </details>
-        :<Link onClick={closeMenu} to={"/"} className='px-5 hover:text-white block'>{title}</Link>
+        :<Link onClick={closeMenu} to={"/contact"} className='px-5 hover:text-white block'>{title}</Link>
         }
     </div>
   )

@@ -1,16 +1,16 @@
-import React from 'react'
 import { MdEmojiEvents, MdFitnessCenter, MdFlag, MdGroups, MdVisibility } from 'react-icons/md'
 import AboutCard from '../components/AboutCard'
 import TeamCard from '../components/TeamCard'
 import { Link } from 'react-router'
+import GetStarted from '../components/GetStarted'
 
 const AboutPage = () => {
   return (
 <main>
-    <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-custom-darker">
+    <section className="pt-24 pb-16 bg-custom-darker">
         <div className="w-dvw px-4 md:px-8 lg:px-16 text-center">
             <h1 className="text-4xl md:text-6xl font-extrabold mb-6">
-                <span className="text-custom-orange">ABOUT</span> PAM-FITNESS
+                ABOUT <span className="text-custom-orange">PAM-FITNESS</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-8">
                 We are more than just a gym; we are a community dedicated to helping you achieve your fitness goals and live a healthier, happier life.
@@ -89,13 +89,11 @@ const AboutPage = () => {
         </div>
     </section>
     <section className="bg-custom-orange py-16 md:py-20">
-        <div className="container mx-auto px-4 md:px-8 lg:px-16 text-center">
-            <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-4">Ready to Transform Your Life?</h2>
-            <p className="text-lg text-white mb-8 max-w-2xl mx-auto">Join the Pam-Fitness family today and start your journey towards a stronger, healthier you.</p>
-            <Link to={'/subscriptions'} className="bg-white text-custom-orange px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-colors">
-                GET STARTED NOW
-            </Link>
-        </div>
+        <GetStarted
+            title="Ready to Transform Your Life?" 
+            description="Join the Pam-Fitness family today and start your journey towards a stronger, healthier you." 
+            btnText="GET STARTED NOW" 
+        />
     </section>
 </main>
   )
