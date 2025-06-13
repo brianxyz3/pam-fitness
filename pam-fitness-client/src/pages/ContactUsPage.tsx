@@ -17,7 +17,7 @@ const ContactUsPage = () => {
         </section>
         <section className="py-16 md:py-24 px-4 md:px-8 lg:px-16">
             <div className="container mx-auto">
-                <div id='contactUs' className="grid md:grid-cols-2 gap-12 items-start">
+                <div id='contactUs' className="grid md:grid-cols-2 gap-12 items-center">
                     <div className="bg-custom-darker p-8 md:p-12 rounded-xl">
                         <h2 className="text-3xl font-semibold mb-8">Get In Touch</h2>
                         <ContactForm/>
@@ -49,27 +49,27 @@ const ContactUsPage = () => {
                                 </div>
                             </div>
                         </div>
-                    <div>
-                        <h3 className="text-2xl font-semibold mb-6">Business Hours</h3>
-                        <div className="space-y-2 text-gray-300">
-                            <div className="flex justify-between">
-                                <span>Monday - Friday:</span>
-                                <span>9:00 AM - 8:00 PM</span>
-                            </div>
-                            <div className="flex justify-between">
-                                <span>Saturday:</span>
-                                <span>10:00 AM - 6:00 PM</span>
-                            </div>
-                            <div className="flex justify-between">
-                                <span>Sunday:</span>
-                                <span>Closed</span>
+                        <div>
+                            <h3 className="text-2xl font-semibold mb-6">Business Hours</h3>
+                            <div className="space-y-2 text-gray-300">
+                                <div className="flex justify-between">
+                                    <span>Monday - Friday:</span>
+                                    <span>9:00 AM - 8:00 PM</span>
+                                </div>
+                                <div className="flex justify-between">
+                                    <span>Saturday:</span>
+                                    <span>10:00 AM - 6:00 PM</span>
+                                </div>
+                                <div className="flex justify-between">
+                                    <span>Sunday:</span>
+                                    <span>Closed</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div>
-                        <h3 className="text-2xl font-semibold mb-6">Find Us On Map</h3>
+                        <div>
+                            <h3 className="text-2xl font-semibold mb-6">Find Us On Map</h3>
                             <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
-                                <iframe allowFullScreen={false} className="rounded-lg border-none" height="300" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086018651165!2d-122.419415584681!3d37.77492927975909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064c2b58207%3A0x4cb7c8a882b80301!2sSan%20Francisco%20City%20Hall!5e0!3m2!1sen!2sus!4v1609890590000!5m2!1sen!2sus" width="100%"></iframe>
+                                <iframe allowFullScreen={false} className="rounded-lg max-h-72 border-none" height="250" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086018651165!2d-122.419415584681!3d37.77492927975909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064c2b58207%3A0x4cb7c8a882b80301!2sSan%20Francisco%20City%20Hall!5e0!3m2!1sen!2sus!4v1609890590000!5m2!1sen!2sus" width="100%"></iframe>
                             </div>
                         </div>
                     </div>

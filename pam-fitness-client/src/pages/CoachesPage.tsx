@@ -82,12 +82,3 @@ const CoachesPage = () => {
 }
 
 export default CoachesPage;
-
-
-{/* <h2 className="text-3xl font-bold mb-4 text-white"></h2>
-            <p className="md:text-lg text-gray-400 mb-8 max-w-xl mx-auto">
-                
-            </p>
-            <button type='reset' className="bg-custom-orange text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-red-700 transition duration-300 flex items-center mx-auto">
-                 
-            </button> */}

@@ -4,4 +4,4 @@ export {default as servicesImg2} from './images/gym-treadmill-workout.jpg';
 export {default as joinUsImg} from './images/joinUsImg.jpg'; 
 export {default as arrowDirImg} from './images/arrow-direction-img.jpg'; 
 export {default as servicesImg5} from './images/biceps-workout.jpg'; 
-export {default as communityImg} from './images/gym-community.jpg'; 
+export {default as communityImg} from './images/gym-community.jpg';  

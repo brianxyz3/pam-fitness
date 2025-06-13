@@ -7,7 +7,6 @@ import AboutPage from './pages/AboutPage';
 import SubscriptionsPage from './pages/SubscriptionsPage';
 import CoachesPage from './pages/CoachesPage';
 import ContactUsPage from './pages/ContactUsPage';
-// import Test from './pages/Test';
 
 const App = () => {
   return (

@@ -15,12 +15,12 @@ const Footer: React.FC<FooterProp> = ({isHomePage = false}) => {
     <>
     { isHomePage ?
             <footer className='bg-gradient-to-r from-[#FF4A04] to-[#FF4A04] via-red-800 px-6 sm:px-10 mx-10 text-black rounded-t-3xl'>
-                <div className='h-[20vh] group hover:scale-x-110 duration-300 sm:h-[30vh] w-fit mx-auto relative flex flex-col justify-center'>
+                <Link  to='/contact' className='h-[20vh] group hover:scale-x-110 duration-300 sm:h-[30vh] w-fit mx-auto relative flex flex-col justify-center'>
                     <h5 className='text-xl md:text-5xl font-[600] text-center scale-150 md:tracking-wider'>LET'S TALK</h5>
                     <div className='bg-black absolute hover:scale-105 -right-[40%] w-fit p-1 md:p-2 rounded-full'>
                         <BsArrowRight className='-rotate-45 group-hover:rotate-0 size-2 md:size-4 fill-white duration-300'/>
                     </div>
-                </div>
+                </Link>
                 {/* mobile screen size gym open hours */}
                 <div className='w-full tracking-tight text-nowrap text-sm leading-8 rounded-3xl flex sm:hidden flex-col gap-y-1'>
                     <h5 className='text-lg font-bold'>TIME</h5>
@@ -40,12 +40,12 @@ const Footer: React.FC<FooterProp> = ({isHomePage = false}) => {
                 </div>
                 <div className='font-semibold border-t-2 py-2 h-fit border-black flex justify-between items-center flex-wrap gap-y-2'>
                     <Logo/>
-                    <ul className='flex flex-wrap gap-x-6 justify-between gap-y-2'>
+                    <div className='flex flex-wrap gap-x-6 justify-between gap-y-2'>
                         <Link to="/about" className='hover:text-white duration-300'>About Us</Link>
                         <Link to="/service" className='hover:text-white duration-300'>Services</Link>
-                        <Link to="/" className='hover:text-white duration-300'>Projects</Link>
-                        <Link to="/" className='hover:text-white duration-300'>Reviews</Link>
-                    </ul>
+                        <Link to="/subscription" className='hover:text-white duration-300'>Subscription</Link>
+                        <Link to="/contact" className='hover:text-white duration-300'>Contact</Link>
+                    </div>
                     <div className='w-fit flex gap-4'>
                         <FooterIconBtn link='/'>
                             <BsInstagram/>
